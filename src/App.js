@@ -44,56 +44,65 @@ function App() {
     { 
       id: 1,
       name: "Nyama Choma Platter", 
-      price: 1200, 
+      price: 300, 
       description: "Tender roasted meat served with kachumbari and ugali", 
       category: "main",
       image: 'https://images.unsplash.com/photo-1603360946369-dc9bb6258143?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80',
       spicy: true,
       popular: true
     },
+      { 
+      id: 13,
+      name: "Mutura", 
+      price: 20, 
+      description: "mixture of meat, blood, and spices, encased in animal intestines", 
+      category: "drinks",
+      image: '/images/mutura.jpg'
+    },
+
     { 
       id: 2,
       name: "Ugali & Sukuma Wiki", 
-      price: 450, 
+      price: 100, 
       description: "Maize meal with braised collard greens and fried fish", 
       category: "main",
-      image: 'https://images.unsplash.com/photo-1633945274419-a7c0d72b4715?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80',
+      image: '/images/ugali.webp',
       vegan: true
     },
     { 
       id: 3,
-      name: "Pilau Feast", 
-      price: 600, 
-      description: "Aromatic rice dish with tender beef and spices", 
+      name: "Smocha", 
+      price: 80, 
+      description: "A combination of smokie and chapati", 
       category: "main",
-      image: 'https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80',
+      image: '/images/smocha.jpg',
       popular: true
     },
     { 
       id: 4,
-      name: "Chapati Combo", 
-      price: 250, 
+      name: "Choma", 
+      price: 70, 
       description: "3 soft, flaky flatbreads with beans or vegetables", 
-      category: "snacks",
-      image: 'https://images.unsplash.com/photo-1633945274309-9d9e0ea0a21d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80',
+      category: "main",
+      image: '/images/choma.jpg',
       vegan: true
     },
     { 
       id: 5,
       name: "Mandazi Delight", 
-      price: 150, 
-      description: "6 pieces of sweet fried dough with coconut dip", 
+      price: 60, 
+      description: "6 pieces of sweet fried dough", 
       category: "snacks",
-      image: 'https://images.unsplash.com/photo-1633945274309-9d9e0ea0a21d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80',
+      image: '/images/mandazi.jpg',
       popular: true
     },
     { 
       id: 6,
       name: "Samosa Trio", 
-      price: 300, 
+      price: 30, 
       description: "3 spiced pastries with beef, chicken or vegetable filling", 
       category: "snacks",
-      image: 'https://images.unsplash.com/photo-1589302168068-964664a93dc0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80',
+      image: 'https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80',
       spicy: true
     },
     { 
@@ -102,7 +111,7 @@ function App() {
       price: 300, 
       description: "Kenya's premium lager served chilled", 
       category: "drinks",
-      image: 'https://images.unsplash.com/photo-1618889482923-38250401a84e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80',
+      image: '/images/tusker.webp',
       alcoholic: true
     },
     { 
@@ -138,7 +147,7 @@ function App() {
       price: 350, 
       description: "Seasonal fruits with yogurt and honey drizzle", 
       category: "desserts",
-      image: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80',
+      image: '/images/fruit.webp',
       vegan: true
     },
     { 
@@ -149,13 +158,14 @@ function App() {
       category: "drinks",
       image: 'https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'
     }
+  
   ];
 
   const galleryImages = [
     'https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80',
     'https://images.unsplash.com/photo-1603360946369-dc9bb6258143?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80',
-    'https://images.unsplash.com/photo-1633945274419-a7c0d72b4715?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80',
-    'https://images.unsplash.com/photo-1589302168068-964664a93dc0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80'
+    '/images/choma.jpg',
+    '/images/tusker.webp'
   ];
 
   const categories = ['all', 'main', 'snacks', 'drinks', 'desserts'];
